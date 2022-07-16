@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav .fas{
+            font-size: 20px;
+        }
+        nav a{
+            text-decoration: none;
+            color: #000;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        .sign-in{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .sign-in input{
+            margin-top: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+        .sign-in input[type="submit"]{
+            font-weight: 700;
+            background-color: yellowgreen;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Login</a>
+                <a href="">Dashboard</a>
+                <a href="">Support</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+                <a href=""><i class="fas fa-user-circle"></i></a>
+            </span>
+            
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="#" class="sign-in">
+            <h2>Enter Your Detalis:</h2>
+            <input type="email" name="email" id="" placeholder="Enter Your Email">
+            <input type="password" name="password" id="" placeholder="Enter Your Password">
+            <input type="submit" value="Sign In">
+        </form>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/9629999ef9.js" crossorigin="anonymous"></script>
+</body>
+</html>
