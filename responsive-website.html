@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            max-width: 1920px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+       .container{
+        display: flex;
+       }
+       .container .split{
+        width: 50%;
+       }
+       .split img{
+        width: 100%;
+       }
+       @media screen and (max-width: 576px) {
+        .container{
+            flex-direction: column-reverse;
+        }
+        .container .split{
+            width: 100%;
+       }
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <section class="container">
+        <div class="split">
+            <img src="images/food.jpg" alt="">
+        </div>
+        <div class="split">
+            <img src="images/birds.jpg" alt="birds">
+        </div>
+    </section>
+</body>
+</html>
